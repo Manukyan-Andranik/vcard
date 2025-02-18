@@ -93,21 +93,31 @@
             function generateVCard() {
                 const vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:{{ employee.name }}
-TEL:{{ employee.contacts.personal_phone }}
-EMAIL:{{ employee.contacts.personal_email }}
-ORG:{{ employee.company }}
-TITLE:{{ employee.position }}
-URL:{{ employee.website }}
+FN:${employee.name}
+ORG:${employee.company}
+TITLE:${employee.position}
+TEL;TYPE=CELL:${employee.contacts.personal_phone}
+TEL;TYPE=WORK:${employee.contacts.office_phone}
+EMAIL;TYPE=HOME:${employee.contacts.personal_email}
+EMAIL;TYPE=WORK:${employee.contacts.office_email}
+URL:${employee.website}
+ADR;TYPE=WORK:${employee.location.address}
+X-SOCIALPROFILE;TYPE=whatsapp:${employee.social_media.whatsapp}
+X-SOCIALPROFILE;TYPE=instagram:${employee.social_media.instagram}
+X-SOCIALPROFILE;TYPE=facebook:${employee.social_media.facebook}
+X-SOCIALPROFILE;TYPE=linkedin:${employee.social_media.linkedin}
 END:VCARD`;
 
-                const blob = new Blob([vCardData], { type: 'text/vcard' });
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = 'contact.vcf';
-                link.click();
-            }
-        </script>
+            const blob = new Blob([vCardData], { type: 'text/vcard' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'contact.vcf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+
 
 
         <div class="contact-section">
