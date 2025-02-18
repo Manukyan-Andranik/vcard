@@ -78,17 +78,20 @@
             </div>
         </div>
 
-        <button class="w-full flex flex-row justify-center items-center space-x-[10px] rounded-[4px] mt-[20px] py-[14px] cursor-pointer hover:opacity-80 duration-500"
-    id="vcardContact" style="background-color: rgb(189, 27, 16);" onclick="generateVCard()">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Your SVG code here -->
-    </svg>
-    <p class="duration-500 text-sm leading-3 w-8/12" style="font-family: 'GT Walsheim Pro'; color: rgb(255, 255, 255);">Add Contact</p>
-</button>
+        <button
+            class="w-full flex flex-row justify-center items-center space-x-[10px] rounded-[4px] mt-[20px] py-[14px] cursor-pointer hover:opacity-80 duration-500"
+            id="vcardContact" style="background-color: rgb(189, 27, 16);" onclick="generateVCard()">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Your SVG code here -->
+            </svg>
+            <p class="duration-500 text-sm leading-3 w-8/12"">
+                <h2 style="color: rgb(255, 255, 255);"> Add Contact </h2>
+            </p>
+        </button>
 
-<script>
-    function generateVCard() {
-        const vCardData = `BEGIN:VCARD
+        <script>
+            function generateVCard() {
+                const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:{{ employee.name}}
 TEL:{{ employee.contacts.personal_phone }}
@@ -98,13 +101,13 @@ TITLE:{{ employee.position }}
 URL:{{ employee.website }}
 END:VCARD`;
 
-        const blob = new Blob([vCardData], { type: 'text/vcard' });
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.download = 'contact.vcf';
-        link.click();
-    }
-</script>
+                const blob = new Blob([vCardData], { type: 'text/vcard' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'contact.vcf';
+                link.click();
+            }
+        </script>
 
 
         <div class="contact-section">
