@@ -1,3 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            opacity: 0;
+            animation: fadeInOut 3s ease forwards;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.2);
+            }
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div id="logo">Your Logo</div>
+    </div>
+    <div id="content">
+        <h1>Welcome to the Website!</h1>
+        <p>This is your main website content.</p>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loader-wrapper').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 3000); // 3 seconds for the logo animation
+        });
+    </script>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,16 +93,16 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-
         body {
-            background: linear-gradient(135deg, #ff6b6b, #f8b3b3);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            font-size: 16px;
-        }
+    background-image: linear-gradient(to bottom, #4f0013, #bd1b10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 16px;
+}
+
 
         .container {
             display: flex;

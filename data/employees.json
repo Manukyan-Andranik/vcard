@@ -4,7 +4,7 @@
     "logo": "../static/assets/icons/logo.png",
     "address": "7/16 Nalbandyan St, Yerevan, 0010, Armenia",
     "location_link": "https://maps.google.com/?q=7/16+Nalbandyan+St,+Yerevan",
-    "phone": "+374 12 212124",
+    "phone": "+374 41 221224",
     "email": "info@granat.am",
     "website": "www.granat.am",
     "social_media": {
@@ -13,7 +13,7 @@
       "facebook": "https://instagram.com/granat_digital_agency_?igsh=MXVoMnc0cDVvMnQyaw==",
       "linkedin": "https://www.linkedin.com/company/granat-da"
     },
-    "employees": ["Co-Founder & CEO", "Co-Founder & Project Manager", "Co-Founder & SMM Specialist", "IT Department Manager"]
+    "employees": ["Co-Founder & CEO", "Co-Founder & Project Lead", "Co-Founder & Head of Digital", "IT Department Manager"]
   },
 
   "employees": [
@@ -24,7 +24,7 @@
         "photo": "andranik_pic.jpg",
         "contacts": {
           "personal_phone": "+374 94 752662",
-          "office_phone": "+374 12 212124",
+          "office_phone": "+374 41 221224",
           "personal_email": "andranik.manukyan@granat.am",
           "office_email": "info@granat.am"
         },
@@ -47,7 +47,7 @@
         "photo": "vachagan_pic.jpg",
         "contacts": {
           "personal_phone": "+374 94 995569",
-          "office_phone": "+374 12 212124",
+          "office_phone": "+374 41 221224",
           "personal_email": "vachagan.vardanyan@granat.am",
           "office_email": "info@granat.am"
         },
@@ -66,11 +66,11 @@
       },
       "pm": {
         "name": "Nelly Zalinyan",
-        "position": "Co-Founder & Project Manager",
+        "position": "Co-Founder & Project Lead",
         "photo": "nelly_pic.jpg",
         "contacts": {
           "personal_phone": "+374 96 053604",
-          "office_phone": "+374 12 212124",
+          "office_phone": "+374 41 221224",
           "personal_email": "nelly.zalinyan@granat.am",
           "office_email": "info@granat.am"
         },
@@ -89,11 +89,11 @@
       },
       "smm": {
         "name": "Lusine Mamikonyan",
-        "position": "Co-Founder & SMM Specialist",
+        "position": "Co-Founder & Head of Digital",
         "photo": "lusine_pic.jpg",
         "contacts": {
-          "personal_phone": "+374 94 995569",
-          "office_phone": "+374 12 212124",
+          "personal_phone": "+374 98 118002",
+          "office_phone": "+374 41 221224",
           "personal_email": "lusine.mamikonyan@granat.am",
           "office_email": "info@granat.am"
         },

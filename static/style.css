@@ -12,7 +12,7 @@ body {
       font-family: 'Eudoxus Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    background-color: linar-gradient(bottom, #4f0013, #bd1b10);
 }
 .container {
     max-width: 600px;
