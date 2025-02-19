@@ -21,7 +21,7 @@
           "whatsapp": "https://wa.me/+37494752662",
           "instagram": "https://instagram.com/granat_digital_agency_?igsh=MXVoMnc0cDVvMnQyaw==",
           "facebook": "https://facebook.com/your-profile",
-          "linkedin": "https://linkedin.com/in/your-profile"
+          "linkedin": "https://www.linkedin.com/in/andranik-manukyan-44bb4a250/"
         }
       },
       "ceo": {
@@ -46,8 +46,57 @@
           "facebook": "https://facebook.com/your-profile",
           "linkedin": "https://linkedin.com/in/vachagan-vardanyan-03a542259/"
         }
+      },
+      "pm": {
+        "name": "Nelly Zalinyan",
+        "position": "Co-Founder & Project Manager",
+        "photo": "nelly_pic.jpg",
+        "contacts": {
+          "personal_phone": "+374 96 053604",
+          "office_phone": "+374 12 212124",
+          "personal_email": "nelly.zalinyan@granat.am",
+          "office_email": "info@granat.am"
+        },
+        "website": "www.granat.am",
+        "location": {
+          "address": "7/16 Nalbandyan St, Yerevan, 0010, Armenia",
+          "map_link": "https://maps.google.com/?q=7/16+Nalbandyan+St,+Yerevan"
+        },
+        "company": "Granat Digital Agency",
+        "social_media": {
+          "whatsapp": "https://wa.me/+37496053604",
+          "instagram": "https://instagram.com/granat_digital_agency_?igsh=MXVoMnc0cDVvMnQyaw==",
+          "facebook": "https://facebook.com/your-profile",
+          "linkedin": "https://www.linkedin.com/in/nelly-zalinyan-72a651297/"
+        }
+      },
+      "smm": {
+        "name": "Lusine Mamikonyan",
+        "position": "Co-Founder & SMM Specialist",
+        "photo": "lusine_pic.jpg",
+        "contacts": {
+          "personal_phone": "+374 94 995569",
+          "office_phone": "+374 12 212124",
+          "personal_email": "vachagan.vardanyan@granat.am",
+          "office_email": "info@granat.am"
+        },
+        "website": "www.granat.am",
+        "location": {
+          "address": "7/16 Nalbandyan St, Yerevan, 0010, Armenia",
+          "map_link": "https://maps.google.com/?q=7/16+Nalbandyan+St,+Yerevan"
+        },
+        "company": "Granat Digital Agency",
+        "social_media": {
+          "whatsapp": "https://wa.me/+37494995569",
+          "instagram": "https://instagram.com/granat_digital_agency_?igsh=MXVoMnc0cDVvMnQyaw==",
+          "facebook": "https://facebook.com/your-profile",
+          "linkedin": "https://www.linkedin.com/in/lusine-mamikonyan-marketing-digitalmarketing-branding/"
+        }
       }
-
     }
   ]
 }
+
+
+
+
