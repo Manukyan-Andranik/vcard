@@ -13,9 +13,20 @@ def find_employee_by_position(position):
         print(e)
         return None
 
+def granat_data():
+    with open("data/employees.json", "r") as file:
+        employees_data = json.load(file)
+    return employees_data["granat"]
+
 @app.route("/")
 def home():
     return "Hello fromn Granat Digital Agency"
+
+@app.route("/granat")
+def granat():
+    granat_d = granat_data()
+    print(granat_d)
+    return render_template("granat.html", data=granat_d)
 
 @app.route("/employees/<string:pos>")
 def employee_id(pos):

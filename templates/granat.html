@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.name }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff6b6b, #f8b3b3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            color: #333;
+            font-weight: 600;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact-info p a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info p a:hover {
+            color: #c0392b;
+        }
+
+        .employees {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            width: auto;
+            margin-bottom: 40px;
+        }
+
+        .employee {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .employee:hover {
+            transform: translateY(-10px);
+        }
+
+        .employee img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 6px solid #e74c3c;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .employee img:hover {
+            transform: scale(1.1);
+        }
+
+        .employee a {
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .employee a:hover {
+            color: #e74c3c;
+        }
+        .social-media a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            background: #f1f1f1;
+            transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* .social-media a {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            padding: 15px 20px;
+            border-radius: 50%;
+            background-color: #c0392b;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        .social-media a img {
+            margin-right: 10px;
+            /* Space between icon and text */
+            width: 30px;
+            /* Icon size */
+            height: auto;
+        }
+
+      
+
+        .social-links {
+            padding: 20px;
+        }
+
+      
+        .social-media a:hover {
+            background: #e1e1e1;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .footer a {
+            color: #e74c3c;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #c0392b;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .employees {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .social-media a {
+                font-size: 18px;
+                padding: 12px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .logo {
+                width: 150px;
+            }
+
+            .social-media a {
+                font-size: 16px;
+                padding: 10px 12px;
+            }
+
+            .footer p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{ data.logo }}" alt="Granat Digital Agency" class="logo">
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> <a href="https://maps.google.com/?q=7/16+Nalbandyan+St,+Yerevan"
+                    target="_blank">7/16 Nalbandyan St, Yerevan, Armenia</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+37412212124">+374 12 212124</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@granat.am">info@granat.am</a></p>
+            <p><strong>Website:</strong> <a href="http://www.granat.am" target="_blank">www.granat.am</a></p>
+        </div>
+
+        <h1>Employees</h1>
+        <div class="employees">
+            <div class="employee">
+                <img src="../static/assets/profil_pics/vachagan_pic.jpg" alt="CEO Photo">
+                <a id="ceo-link" target="_blank">{{ data.employees[0] }}</a>
+            </div>
+            <div class="employee">
+                <img src="../static/assets/profil_pics/nelly_pic.jpg" alt="PM Photo">
+                <a id="pm-link" target="_blank">{{ data.employees[1] }}</a>
+            </div>
+            <div class="employee">
+                <img src="../static/assets/profil_pics/lusine_pic.jpg" alt="SMM Photo">
+                <a id="smm-link" target="_blank">{{ data.employees[2] }}</a>
+            </div>
+            <div class="employee">
+                <img src="../static/assets/profil_pics/andranik_pic.jpg" alt="IT Photo">
+                <a id="it-link" target="_blank">{{ data.employees[3] }}</a>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="https://wa.me/37441221224" target="_blank">
+                <img src='../static/assets/icons/wa.png' alt="WhatsApp"> WhatsApp
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100093626951375" target="_blank">
+                <img src='../static/assets/icons/fb.png' alt="Facebook"> Facebook
+            </a>
+            <a href="https://www.instagram.com/granat_digital_agency_/" target="_blank">
+                <img src='../static/assets/icons/inst.png' alt="Instagram"> Instagram
+            </a>
+            <a href="https://www.linkedin.com/company/granat-da/" target="_blank">
+                <img src='../static/assets/icons/linkedin.png' alt="LinkedIn"> LinkedIn
+            </a>
+        </div>
+
+
+        <div class="footer">
+            <p>Granat Digital Agency &copy; 2025</p>
+            <p><a href="http://www.granat.am" target="_blank">Visit our website</a></p>
+        </div>
+    </div>
+
+    <script>
+        function getBaseUrl() {
+            return window.location.href.split('granat')[0];
+        }
+
+        document.getElementById('ceo-link').href = getBaseUrl() + "employees/ceo";
+        document.getElementById('pm-link').href = getBaseUrl() + "employees/pm";
+        document.getElementById('smm-link').href = getBaseUrl() + "employees/smm";
+        document.getElementById('it-link').href = getBaseUrl() + "employees/it";
+    </script>
+</body>
+
+</html>

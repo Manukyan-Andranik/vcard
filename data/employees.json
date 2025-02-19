@@ -1,4 +1,21 @@
 {
+  "granat": {
+    "name": "Granat Digital Agency",
+    "logo": "../static/assets/icons/logo.png",
+    "address": "7/16 Nalbandyan St, Yerevan, 0010, Armenia",
+    "location_link": "https://maps.google.com/?q=7/16+Nalbandyan+St,+Yerevan",
+    "phone": "+374 12 212124",
+    "email": "info@granat.am",
+    "website": "www.granat.am",
+    "social_media": {
+      "whatsapp": "https://wa.me/+37412212124",
+      "instagram": "https://instagram.com/granat_digital_agency_?igsh=MXVoMnc0cDVvMnQyaw==",
+      "facebook": "https://instagram.com/granat_digital_agency_?igsh=MXVoMnc0cDVvMnQyaw==",
+      "linkedin": "https://www.linkedin.com/company/granat-da"
+    },
+    "employees": ["Co-Founder & CEO", "Co-Founder & Project Manager", "Co-Founder & SMM Specialist", "IT Department Manager"]
+  },
+
   "employees": [
     {
       "it": {
