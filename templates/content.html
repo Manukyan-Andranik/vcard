@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.name }}</title>
+    <link rel="stylesheet" href="../static/content_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<body>
+    <div id="loader-wrapper-anim">
+        <img src="../static/assets/icons/logo.png" alt="Granat Digital Agency" class="logo-anim">
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader-wrapper-anim').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <img src="../static/assets/icons/logo.png" alt="Granat Digital Agency" class="logo">
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> <a href="https://maps.google.com/?q=7/16+Nalbandyan+St,+Yerevan"
+                    target="_blank">7/16 Nalbandyan St, Yerevan, Armenia</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+37412212124">+374 12 212124</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@granat.am">info@granat.am</a></p>
+            <p><strong>Website:</strong> <a href="http://www.granat.am" target="_blank">www.granat.am</a></p>
+        </div>
+
+        <h1>Employees</h1>
+        <div class="employees">
+            <div class="employee">
+                <img src="../static/assets/profil_pics/vachagan_pic.jpg" alt="CEO Photo">
+                <a id="ceo-link" target="_blank">{{ data.employees[0] }}</a>
+            </div>
+            <div class="employee">
+                <img src="../static/assets/profil_pics/nelly_pic.jpg" alt="PM Photo">
+                <a id="pm-link" target="_blank">{{ data.employees[1] }}</a>
+            </div>
+            <div class="employee">
+                <img src="../static/assets/profil_pics/lusine_pic.jpg" alt="SMM Photo">
+                <a id="smm-link" target="_blank">{{ data.employees[2] }}</a>
+            </div>
+            <div class="employee">
+                <img src="../static/assets/profil_pics/andranik_pic.jpg" alt="IT Photo">
+                <a id="it-link" target="_blank">{{ data.employees[3] }}</a>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="https://wa.me/37441221224" target="_blank">
+                <img src='../static/assets/icons/wa.png' alt="WhatsApp"> WhatsApp
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100093626951375" target="_blank">
+                <img src='../static/assets/icons/fb.png' alt="Facebook"> Facebook
+            </a>
+            <a href="https://www.instagram.com/granat_digital_agency_/" target="_blank">
+                <img src='../static/assets/icons/inst.png' alt="Instagram"> Instagram
+            </a>
+            <a href="https://www.linkedin.com/company/granat-da/" target="_blank">
+                <img src='../static/assets/icons/linkedin.png' alt="LinkedIn"> LinkedIn
+            </a>
+        </div>
+
+
+        <div class="footer">
+            <p>Granat Digital Agency &copy; 2025</p>
+            <p><a href="http://www.granat.am" target="_blank">Visit our website</a></p>
+        </div>
+    </div>
+
+   
+    <script>
+        function getBaseUrl() {
+            return window.location.href.split('granat')[0];
+        }
+
+        document.getElementById('ceo-link').href = getBaseUrl() + "employees/ceo";
+        document.getElementById('pm-link').href = getBaseUrl() + "employees/pm";
+        document.getElementById('smm-link').href = getBaseUrl() + "employees/smm";
+        document.getElementById('it-link').href = getBaseUrl() + "employees/it";
+    </script>
+</body>
+
+</html> 

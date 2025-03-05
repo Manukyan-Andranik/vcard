@@ -26,7 +26,7 @@ def home():
 def granat():
     granat_d = granat_data()
     print(granat_d)
-    return render_template("granat.html", data=granat_d)
+    return render_template("content.html", data=granat_d)
 
 @app.route("/employees/<string:pos>")
 def employee_id(pos):
