@@ -84,7 +84,7 @@
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Your SVG code here -->
             </svg>
-            <p class="duration-500 text-sm leading-3 w-8/12"">
+            <p class="duration-500 text-sm leading-3 w-8/12">
                 <h2 style="color: rgb(255, 255, 255);"> Add Contact </h2>
             </p>
         </button>
@@ -93,7 +93,8 @@
             function generateVCard() {
                 const vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:{{ employee.name }}
+FN:{{ employee.first_name }} {{ employee.last_name }}
+N:{{ employee.last_name }};{{ employee.first_name }}
 TEL:{{ employee.contacts.personal_phone }}
 EMAIL:{{ employee.contacts.personal_email }}
 ORG:{{ employee.company }}
