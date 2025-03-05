@@ -19,7 +19,8 @@
   "employees": [
     {
       "it": {
-        "name": "Andreanik Manukyan",
+        "first_name": "Andreanik",
+        "last_name": "Manukyan",
         "position": "IT Department Manager",
         "photo": "andranik_pic.jpg",
         "contacts": {
@@ -42,7 +43,8 @@
         }
       },
       "ceo": {
-        "name": "Vachagan Vardanyan",
+        "first_name": "Vachagan",
+        "last_name": "Vardanyan",
         "position": "Co-Founder & CEO",
         "photo": "vachagan_pic.jpg",
         "contacts": {
@@ -65,7 +67,8 @@
         }
       },
       "pm": {
-        "name": "Nelly Zalinyan",
+        "first_name": "Nelly",
+        "last_name": "Zalinyan",
         "position": "Co-Founder & Project Lead",
         "photo": "nelly_pic.jpg",
         "contacts": {
@@ -88,7 +91,8 @@
         }
       },
       "smm": {
-        "name": "Lusine Mamikonyan",
+        "first_name": "Lusine",
+        "last_name": "Mamikonyan",
         "position": "Co-Founder & Head of Digital",
         "photo": "lusine_pic.jpg",
         "contacts": {

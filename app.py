@@ -32,9 +32,10 @@ def granat():
 def employee_id(pos):
     employee = find_employee_by_position(pos)
     if employee:
+        employee["name"] = f"{employee['first_name']} {employee['last_name']}"
         return render_template("index.html", employee=employee)
     else:
         return "Employee not found", 404
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5001)

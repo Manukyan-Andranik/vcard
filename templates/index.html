@@ -88,27 +88,27 @@
                 <h2 style="color: rgb(255, 255, 255);"> Add Contact </h2>
             </p>
         </button>
-
-        <script>
-            function generateVCard() {
-                const vCardData = `BEGIN:VCARD
+<script>
+    function generateVCard() {
+        const vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:{{ employee.first_name }} {{ employee.last_name }}
-N:{{ employee.last_name }};{{ employee.first_name }}
-TEL:{{ employee.contacts.personal_phone }}
-EMAIL:{{ employee.contacts.personal_email }}
-ORG:{{ employee.company }}
-TITLE:{{ employee.position }}
-URL:{{ employee.website }}
+FN:{{ employee.get('first_name', '') }} {{ employee.get('last_name', '') }}
+N:{{ employee.get('last_name', '') }};{{ employee.get('first_name', '') }}
+TEL:{{ employee.contacts.get('personal_phone', '') }}
+EMAIL:{{ employee.contacts.get('personal_email', '') }}
+ORG:{{ employee.get('company', '') }}
+TITLE:{{ employee.get('position', '') | safe }}
+URL:{{ employee.get('website', '') }}
 END:VCARD`;
 
-                const blob = new Blob([vCardData], { type: 'text/vcard' });
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = 'contact.vcf';
-                link.click();
-            }
-        </script>
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'contact.vcf';
+        link.click();
+    }
+</script>
+
 
 
         <div class="contact-section">
