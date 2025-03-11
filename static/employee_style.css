@@ -6,10 +6,7 @@ body {
     color: #333;
     text-align: center;
     line-height: inherit;
-    /* font-family: Vazir, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif; */
-      font-family: 'Eudoxus Sans', sans-serif;
+    font-family: 'Eudoxus Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: linar-gradient(bottom, #4f0013, #bd1b10);
@@ -71,6 +68,20 @@ body {
     padding: 20px;
     text-align: left;
 }
+
+.contact-item {
+    padding: 11px;
+}
+
+.contact-item .icon {
+    --tw-bg-opacity: 1;
+    background-color: #f9f9f9;
+    background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+
 .contact-item {
     margin: 10px 0;
     display: flex;
