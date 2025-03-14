@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ data.name }}</title>
-    <link rel="stylesheet" href="../static/content_style.css">
+    <link rel="icon" type="image/png" href="static/assets/icons/logo.png">
+
+    <link rel="stylesheet" href="static/content_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -98,7 +100,7 @@
 
 <body>
     <div id="loader-wrapper-anim">
-        <img src="../static/assets/icons/logo.png" alt="Granat Digital Agency" class="logo-anim">
+        <img src="static/assets/icons/logo.png" alt="Granat Digital Agency" class="logo-anim">
     </div>
 
     <script>
@@ -111,7 +113,7 @@
 
     <div class="container">
         <div class="header">
-            <img src="../static/assets/icons/logo.png" alt="Granat Digital Agency" class="logo">
+            <img src="static/assets/icons/logo.png" alt="Granat Digital Agency" class="logo">
         </div>
 
         <div class="contact-info">
@@ -168,35 +170,35 @@
         <h1>Our Team</h1>
         <div class="employees">
             <div class="employee">
-                <img src="../static/assets/profil_pics/vachagan_pic.jpg" alt="CEO Photo">
+                <img src="static/assets/profil_pics/vachagan_pic.jpg" alt="CEO Photo">
                 <a id="ceo-link" target="_blank">{{ data.employees[0] }}</a>
             </div>
             <div class="employee">
-                <img src="../static/assets/profil_pics/nelly_pic.jpg" alt="PM Photo">
+                <img src="static/assets/profil_pics/nelly_pic.jpg" alt="PM Photo">
                 <a id="pm-link" target="_blank">{{ data.employees[1] }}</a>
             </div>
             <div class="employee">
-                <img src="../static/assets/profil_pics/lusine_pic.jpg" alt="SMM Photo">
+                <img src="static/assets/profil_pics/lusine_pic.jpg" alt="SMM Photo">
                 <a id="smm-link" target="_blank">{{ data.employees[2] }}</a>
             </div>
             <div class="employee">
-                <img src="../static/assets/profil_pics/andranik_pic.jpg" alt="IT Photo">
+                <img src="static/assets/profil_pics/andranik_pic.jpg" alt="IT Photo">
                 <a id="it-link" target="_blank">{{ data.employees[3] }}</a>
             </div>
         </div>
 
         <div class="social-media">
             <a href="https://wa.me/37441221224" target="_blank">
-                <img src='../static/assets/icons/wa.png' alt="WhatsApp"> WhatsApp
+                <img src='static/assets/icons/wa.png' alt="WhatsApp"> WhatsApp
             </a>
             <a href="https://www.facebook.com/profile.php?id=100093626951375" target="_blank">
-                <img src='../static/assets/icons/fb.png' alt="Facebook"> Facebook
+                <img src='static/assets/icons/fb.png' alt="Facebook"> Facebook
             </a>
             <a href="https://www.instagram.com/granat_digital_agency_/" target="_blank">
-                <img src='../static/assets/icons/inst.png' alt="Instagram"> Instagram
+                <img src='static/assets/icons/inst.png' alt="Instagram"> Instagram
             </a>
             <a href="https://www.linkedin.com/company/granat-da/" target="_blank">
-                <img src='../static/assets/icons/linkedin.png' alt="LinkedIn"> LinkedIn
+                <img src='static/assets/icons/linkedin.png' alt="LinkedIn"> LinkedIn
             </a>
         </div>
 
@@ -211,10 +213,10 @@
             return window.location.href.split('granat')[0];
         }
 
-        document.getElementById('ceo-link').href = getBaseUrl() + "employees/ceo";
-        document.getElementById('pm-link').href = getBaseUrl() + "employees/pm";
-        document.getElementById('smm-link').href = getBaseUrl() + "employees/smm";
-        document.getElementById('it-link').href = getBaseUrl() + "employees/it";
+        document.getElementById('ceo-link').href = getBaseUrl() + "granat.am/vcard/ceo";
+        document.getElementById('pm-link').href = getBaseUrl() + "granat.am/vcard/pm";
+        document.getElementById('smm-link').href = getBaseUrl() + "granat.am/vcard/smm";
+        document.getElementById('it-link').href = getBaseUrl() + "granat.am/vcard/it";
     </script>
 </body>
 

@@ -21,6 +21,7 @@
       "it": {
         "first_name": "Andreanik",
         "last_name": "Manukyan",
+        "pos": "it",
         "position": "IT Department Manager",
         "photo": "andranik_pic.jpg",
         "contacts": {
@@ -45,6 +46,7 @@
       "ceo": {
         "first_name": "Vachagan",
         "last_name": "Vardanyan",
+        "pos": "ceo",
         "position": "Co-Founder & CEO",
         "photo": "vachagan_pic.jpg",
         "contacts": {
@@ -69,6 +71,7 @@
       "pm": {
         "first_name": "Nelly",
         "last_name": "Zalinyan",
+        "pos": "pm",
         "position": "Co-Founder & Project Lead",
         "photo": "nelly_pic.jpg",
         "contacts": {
@@ -93,6 +96,7 @@
       "smm": {
         "first_name": "Lusine",
         "last_name": "Mamikonyan",
+        "pos": "smm",
         "position": "Co-Founder & Head of Digital",
         "photo": "lusine_pic.jpg",
         "contacts": {
