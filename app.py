@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 import json
 
 app = Flask(__name__)
@@ -10,8 +10,7 @@ def find_employee_by_position(position):
             employees_data = json.load(file)
         return employees_data["employees"][0][position]
     except Exception as e:
-        print(e)
-        return None
+        return f"{position} Employee not found: Reason {e}", 404
 
 def granat_data():
     with open("data/employees.json", "r") as file:
@@ -20,16 +19,13 @@ def granat_data():
 
 @app.route("/")
 def home():
-    return "Hello fromn Granat Digital Agency"
-
-@app.route("/granat")
-def granat():
     granat_d = granat_data()
-    print(granat_d)
     return render_template("content.html", data=granat_d)
 
-@app.route("/employees/<string:pos>")
+@app.route("/<string:pos>")
 def employee_id(pos):
+    if not pos in ["ceo", "pm", "smm", "it"]:
+        return redirect("/")
     employee = find_employee_by_position(pos)
     if employee:
         employee["name"] = f"{employee['first_name']} {employee['last_name']}"
